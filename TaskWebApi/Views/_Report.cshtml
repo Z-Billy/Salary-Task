@@ -1,0 +1,121 @@
+﻿@model IEnumerable<TaskWebApi.Models.DataDs>
+@{
+    var m = Model.FirstOrDefault();
+    var FirstName = m.UserDs.FirstName;
+    var LastName = m.UserDs.LastName;
+    var NationalCode = m.UserDs.NationalCode;
+}
+
+<div class="card bg-light mb-3">
+    <div class="card-block">
+
+        <div class="row">
+            <div class="card animated fadeIn">
+                <div class="card-header card-header-inverse card-header-primary">
+                    <div class="font-weight-bold">
+                        <span><h1><center>  اطلاعات حقوقی فرد  </center> </h1></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card">
+                <div class="card-header ">مشخصات فرد</div>
+                <div class="card-block">
+                    <div class="row">
+                        <div class="h6 col-md-2"> نام</div>
+                        <div class="col-md-4">@Html.DisplayFor(a => FirstName)</div>
+                    </div>
+                    <div class="row">
+                        <div class="h6 col-md-2">نام خانوادگی</div>
+                        <div class="col-md-4">@Html.DisplayFor(a => LastName)</div>
+                    </div>
+                    <div class="row">
+                        <div class="h6 col-md-2"> کد ملی</div>
+                        <div class="col-md-4">@Html.DisplayFor(a => NationalCode)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card">
+                <div class="card-block">
+                    <table class="table table-hover building-data-table" id="@string.Format("tbl_nm{0}_{1}_{2}", FirstName, LastName, NationalCode)">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.MyDisplayNameFor(model => model.DateDs.Date)
+                                </th>
+                                <th>
+                                    @Html.MyDisplayNameFor(model => model.DateDs.Month)
+                                </th>
+                                <th>
+                                    @Html.MyDisplayNameFor(model => model.SalaryDs.BasicSalary)
+                                    )
+                                </th>
+                                <th>
+                                    @Html.MyDisplayNameFor(model => model.SalaryDs.Allowance)
+                                </th>
+                                <th>
+                                    @Html.MyDisplayNameFor(model => model.SalaryDs.Transportation)
+                                </th>
+                                <th>
+                                    @Html.MyDisplayNameFor(model => model.SalaryDs.Tax)
+                                </th>
+                                <th>
+                                    @Html.MyDisplayNameFor(model => model.SalaryDs.RecieveSalary)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.MyDisplayFor(modelItem => item.DateDs.Date)
+                                </td>
+                                <td>
+                                    @Html.MyDisplayFor(modelItem => item.DateDs.Month)
+                                </td>
+                                <td>
+                                    @Html.MyDisplayFor(modelItem => item.SalaryDs.BasicSalary)
+                                </td>
+                                <td>
+                                    @Html.MyDisplayFor(modelItem => item.SalaryDs.Allowance)
+                                </td>
+
+                                <td>
+                                    @Html.MyDisplayFor(modelItem => item.SalaryDs.Transportation)
+                                </td>
+                                <td>
+                                    @Html.MyDisplayFor(modelItem => item.SalaryDs.Tax)
+                                </td>
+                                <td>
+                                    @Html.MyDisplayFor(modelItem => item.SalaryDs.RecieveSalary)
+                                </td>
+                                <td>
+                                    @if (!ViewBag.IsReadonly)
+                                    {
+
+                                        <div class="btn-group" role="group" aria-label="">
+                                            <a class="btn btn-secondary" href="@Url.Action("Delete", new {nationalCode = NationalCode, month = item.DateDs.Month})">
+                                                <i class="fa fa-remove"></i>
+                                            </a>
+                                            <a class="btn btn-secondary edit-item" data-editurl="@Url.Action("Update", new {nationalCode = NationalCode, month = item.DateDs.Month})" href="#">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                        </div>
+                                    }
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

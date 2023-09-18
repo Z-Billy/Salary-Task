@@ -1,0 +1,531 @@
+﻿@*<div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
+            a broad range of clients, including browsers and mobile devices. ASP.NET Web API
+            is an ideal platform for building RESTful applications on the .NET Framework.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+        </div>
+    </div>*@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="IR-fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title </title>
+
+    <style>
+        .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="card">
+            <div class="card-block">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-block">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="form-group row">
+
+                                            <label class="control-label col-md-3" for="nationalCode">
+                                                کد ملی <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="nationalCode" name="nationalCode" autofocus>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="nationalCode" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <h2> دریافت اطلاعات حقوقی فرد در یک ماه</h2>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="form-group row">
+
+                                            <label class="control-label col-md-3" for="name">
+                                                نام <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="name" name="name" autofocus>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="name" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="form-group row">
+
+                                            <label class="control-label col-md-3" for="nationalCode">
+                                                کد ملی <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="nationalCode" name="nationalCode" autofocus>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="nationalCode" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="form-group row">
+
+                                            <label class="control-label col-md-3" for="lastName">
+                                                نام خانوادگی <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="lastName" name="lastName" autofocus>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="lastName" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="form-group row">
+                                            <label class="control-label col-md-3" for="month">
+                                                ماه <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار  از نوع عددی باشد." data-val-required="مقدار ملک ضروری است." id="month" name="month">
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="month" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+
+                                        <div class="form-group row">
+
+                                            <label class="control-label col-md-3" for="month">
+                                                ماه <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="month" name="month" autofocus>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="month" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+
+
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="form-group row">
+                                            <button id="btn_Get" type="button" class="btn btn-info btn-lg btn-block" data-getWitnReportUrl="@Url.Action("Get")">استعلام </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="form-group row">
+
+                                            <label class="control-label col-md-3" for="date">
+                                                تاریخ <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="date" name="date" autofocus>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="date" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="form-group row">
+
+                                            <label class="control-label col-md-3" for="basicSalary">
+                                                حقوق پایه <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="basicSalary" name="basicSalary" autofocus>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="basicSalary" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <h2> دریافت اطلاعات حقوقی فرد در بازه زمانی</h2>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="form-group row">
+
+                                            <label class="control-label col-md-3" for="allowance">
+                                                حق جذب <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="allowance" name="allowance" autofocus>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="allowance" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="form-group row">
+
+                                            <label class="control-label col-md-3" for="nationalCode">
+                                                کد ملی <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="nationalCode" name="nationalCode" autofocus>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="nationalCode" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+
+                                        <div class="form-group row">
+
+                                            <label class="control-label col-md-3" for="tax">
+                                                مالیات <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="tax" name="tax" autofocus>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="tax" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="form-group row">
+                                            <label class="control-label col-md-3" for="start_date">
+                                                تاریخ شروع <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input type="text" name="start_date" class="form-control" id="witness_date" placeholder="تاریخ" data-targetselector="start_date" data-placement="right" data-englishnumber="true" value="" data-mdpersiandatetimepicker="" data-trigger="click" data-enabletimepicker="false" data-mdformat="yyyy/MM/dd" data-original-title="" title="" data-mdpersiandatetimepickershowing="false" data-val-required="مقدار تاریخ گواهی ضروری است." />
+                                                <div class="input-group-addon" data-mddatetimepicker="true" data-trigger="click" data-targetselector="#@Html.Id("start_date")">
+                                                    <span class="fa fa-calendar"></span>
+                                                </div>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="start_date" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+
+                                        <div class="form-group row">
+
+                                            <label class="control-label col-md-3" for="recieveSalary">
+                                                حقوق دریافتی <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="recieveSalary" name="recieveSalary" autofocus>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="recieveSalary" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="form-group row">
+                                            <label class="control-label col-md-3" for="end_date">
+                                                تاریخ پایان <span style="color:red">*</span>
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input type="text" name="end_date" class="form-control" id="end_date" placeholder="تاریخ" data-targetselector="end_date" data-placement="right" data-englishnumber="true" value="" data-mdpersiandatetimepicker="" data-trigger="click" data-enabletimepicker="false" data-mdformat="yyyy/MM/dd" data-original-title="" title="" data-mdpersiandatetimepickershowing="false" data-val-required="مقدار تاریخ گواهی ضروری است." />
+                                                <div class="input-group-addon" data-mddatetimepicker="true" data-trigger="click" data-targetselector="#@Html.Id("end_date")">
+                                                    <span class="fa fa-calendar"></span>
+                                                </div>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="end_date" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group row">
+                                            <button id="btn_Add" type="button" class="btn btn-info btn-lg btn-block" data-getWitnReportUrl="@Url.Action("Add")">افزودن </button>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="form-group row">
+                                            <button id="btn_GetRange" type="button" class="btn btn-info btn-lg btn-block" data-getWitnReportUrl="@Url.Action("GetRange")">استعلام </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                @*<div class="row">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class=" card">
+                                        <div class="card-block">
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-block">
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="nationalCode">
+                                                                کد ملی <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="nationalCode" name="nationalCode" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="nationalCode" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="control-label col-md-3" for="month">
+                                                                ماه <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار  از نوع عددی باشد." data-val-required="مقدار ملک ضروری است." id="month" name="month">
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="month" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <button id="btn_Get" type="button" class="btn btn-info btn-lg btn-block" data-getWitnReportUrl="@Url.Action("Get")">استعلام </button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-block">
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="nationalCode">
+                                                                کد ملی <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="nationalCode" name="nationalCode" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="nationalCode" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="control-label col-md-3" for="start_date">
+                                                                تاریخ شروع <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input type="text" name="start_date" class="form-control" id="witness_date" placeholder="تاریخ" data-targetselector="start_date" data-placement="right" data-englishnumber="true" value="" data-mdpersiandatetimepicker="" data-trigger="click" data-enabletimepicker="false" data-mdformat="yyyy/MM/dd" data-original-title="" title="" data-mdpersiandatetimepickershowing="false" data-val-required="مقدار تاریخ گواهی ضروری است." />
+                                                                <div class="input-group-addon" data-mddatetimepicker="true" data-trigger="click" data-targetselector="#@Html.Id("start_date")">
+                                                                    <span class="fa fa-calendar"></span>
+                                                                </div>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="start_date" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="control-label col-md-3" for="end_date">
+                                                                تاریخ پایان <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input type="text" name="end_date" class="form-control" id="end_date" placeholder="تاریخ" data-targetselector="end_date" data-placement="right" data-englishnumber="true" value="" data-mdpersiandatetimepicker="" data-trigger="click" data-enabletimepicker="false" data-mdformat="yyyy/MM/dd" data-original-title="" title="" data-mdpersiandatetimepickershowing="false" data-val-required="مقدار تاریخ گواهی ضروری است." />
+                                                                <div class="input-group-addon" data-mddatetimepicker="true" data-trigger="click" data-targetselector="#@Html.Id("end_date")">
+                                                                    <span class="fa fa-calendar"></span>
+                                                                </div>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="end_date" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <button id="btn_GetRange" type="button" class="btn btn-info btn-lg btn-block" data-getWitnReportUrl="@Url.Action("GetRange")">استعلام </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div class="card-block">
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="nationalCode">
+                                                                کد ملی <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="nationalCode" name="nationalCode" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="nationalCode" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="name">
+                                                                نام <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="name" name="name" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="name" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="lastName">
+                                                                نام خانوادگی <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="lastName" name="lastName" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="lastName" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="month">
+                                                                ماه <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="month" name="month" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="month" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="date">
+                                                                تاریخ <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="date" name="date" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="date" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="basicSalary">
+                                                                حقوق پایه <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="basicSalary" name="basicSalary" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="basicSalary" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="allowance">
+                                                                حق جذب <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="allowance" name="allowance" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="allowance" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="transportation">
+                                                                ایاب و ذهاب <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="transportation" name="transportation" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="transportation" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="tax">
+                                                                مالیات <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="tax" name="tax" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="tax" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+
+                                                            <label class="control-label col-md-3" for="recieveSalary">
+                                                                حقوق دریافتی <span style="color:red">*</span>
+                                                            </label>
+                                                            <div class="col-md-9">
+                                                                <input class="form-control text-box single-line" data-val="true" data-val-number="مقدار ورودی   باید از نوع عددی باشد." data-val-required="مقدار شماره پرونده ضروری است." id="recieveSalary" name="recieveSalary" autofocus>
+                                                                <span class="field-validation-valid text-danger" data-valmsg-for="recieveSalary" data-valmsg-replace="true"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <button id="btn_Add" type="button" class="btn btn-info btn-lg btn-block" data-getWitnReportUrl="@Url.Action("Add")">افزودن </button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>*@
+                <br />
+                <div class="row">
+                    <div class="card">
+                        <div class="card-block">
+                            <div id="section-to-print" class="container">
+                                <div id="result_div"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
